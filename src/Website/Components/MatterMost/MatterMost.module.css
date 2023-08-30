@@ -1,0 +1,142 @@
+.container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #545454;
+    padding-top: 20px;
+    overflow-x: hidden;
+}
+
+.heading {
+    font-size: 2.75rem;
+    margin-top: 0;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.paragraph {
+    font-size: 20px;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-bottom: 40px;
+}
+
+.item {
+    padding-top: 10px;
+    flex: 1;
+    display: flex;
+    margin: 0 1rem;
+    text-align: left;
+    background-color: #f6e2ee;
+    border-radius: 35px;
+    width: 20rem;
+    height: auto;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 15px;
+    color: #545454;
+}
+
+.subheadingtext{
+    font-size: 1.5rem;
+    padding-top: 5px;
+    margin-bottom: 0.5rem;
+    padding-left: 15px;
+    color: #545454;
+    text-align: left;
+}
+
+.number {
+    color: #545454;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-left: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.text {
+    font-size: 1rem;
+    color: #545454;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-weight: normal;
+}
+
+.important {
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .container{
+        height: auto;
+    }
+
+    .important{
+        margin:0 3px 0 3px;
+    }
+
+    .paragraph{
+        margin:0 3px 0 3px;
+    }
+
+    .item {
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .heading{
+        font-size: 2.25rem;
+    }
+
+    /* .paragraph{
+        font-size: 1rem;
+    } */
+}
+
+@media screen and (max-width:500px) {
+    .item{
+        /* width: auto; */
+        padding-bottom: 20px;
+       
+    }
+
+    .heading{
+        font-size: 2rem;
+        letter-spacing: 4px;
+    }
+
+    .subheading{
+        font-size: 1.75rem;
+    }
+
+    .important{
+        font-size: 1.25rem;
+    }
+}
